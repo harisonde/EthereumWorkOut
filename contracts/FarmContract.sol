@@ -1,6 +1,6 @@
 pragma solidity ^0.4.18;
 
-contract FarmerContract{
+contract FarmContract{
     address insuranceProvider;
     mapping(address => InsuredDetails) customerDetailsMap;
     mapping(string  => CoverageDetails[]) coverageTypeAndDetailsMap;
@@ -19,7 +19,7 @@ contract FarmerContract{
         uint latitude;
     }
 
-    function FarmerContract() payable public {
+    function FarmContract() payable public {
         insuranceProvider = msg.sender;
     }
 
