@@ -56,9 +56,8 @@ contract FarmContract{
 
           covDetailsArray.push(covDetails);
 
-          require(msg.sender.balance > premium);
-
-          insuranceProvider.transfer(premium);
+           require(msg.sender.balance > premium);
+           insuranceProvider.transfer(premium);
      }
 
       function claimProcessing(string _coverageType) public{
